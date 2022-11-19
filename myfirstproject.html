@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My first Project</title>
+    <head>
+        <title>My First Project</title>
+       <style>
+        form{
+            margin-left:330px;
+            margin-right: 330px;
+            margin-top: 1px;
+            background-color: rgb(252, 248, 248);
+            border:2px solid orange;
+        }
+       h1{
+        text-align: center;
+       }
+       h4{
+        text-align: center;
+       }
+       </style>
+    
+    <body background="firstimage.png";>
+        
+        <input type="button" value="Schedule a call" style="margin-left:950px" >
+        <input type="button" value="Hire With Us"style="margin-left:10px">
+    
+        
+            <form action="#" onsubmit="submitform(event)">
+                <h1 >Book a Call</h1>
+                <h4>Book a Call slot and representative will call you within 1hr of selected time.</h4>
+                <hr>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" id="name"  style="width:540px" >
+                <br>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email"  id="email"  style="width:540px">
+                <br>
+                <label for="phone">Phone:</label>
+                <br>
+                <input type="tel" id="phone"   style="width:540px" >
+                <br>
+                <label for="time for call">Time for Call</label>
+                <br>
+                <input type="date" id="time for call">
+                <label for="time"></label>
+                <input type="time" id="time" name="time">
+                <BR>
+                <input type="submit" value="GET A CALL "  style="width:553px; background-color:orange;border:orange ;" >
+                    
+                    
+                </form>
+            <script>
+                function submitform(event){
+              const name=document.getElementById("name").value 
+              const email=document.getElementById("email").value 
+              const phone=document.getElementById("phone").value 
+              const time_for_call=document.getElementById("time for call").value 
+              const time=document.getElementById("time").value 
+               console.log(name)
+               console.log(email)
+               console.log(phone)
+               console.log(time_for_call)
+               console.log(time)
+               
+                }
+    
+            </script>
+     
+            </body>
+            </html> 
